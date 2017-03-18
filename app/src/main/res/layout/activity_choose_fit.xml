@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.bragitoff.curvefit_leastsquares.Choose_fit"
+    android:id="@+id/choose_layout">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Please choose a type of fitting:"
+        android:id="@+id/textView"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/secondary_text" />
+
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentEnd="false"
+        android:layout_alignParentStart="false"
+        android:layout_alignParentBottom="false"
+        android:layout_centerInParent="true">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Exponential Fitting"
+            android:onClick="exponential"
+            android:id="@+id/button"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:textColor="@color/icons"
+            android:background="@color/colorAccent"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Linear Fitting"
+            android:onClick="linear"
+            android:id="@+id/button2"
+            android:layout_row="1"
+            android:layout_column="0"
+            android:textColor="@color/icons"
+            android:background="@color/colorAccent"
+            android:layout_marginTop="3dp" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Polynomial Fitting"
+            android:onClick="polynomial"
+            android:id="@+id/button3"
+            android:layout_row="2"
+            android:layout_column="0"
+            android:textColor="@color/icons"
+            android:background="@color/colorAccent"
+            android:elevation="0dp"
+            android:layout_marginTop="3dp" />
+    </GridLayout>
+
+</RelativeLayout>

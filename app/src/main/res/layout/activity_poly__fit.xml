@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ScrollView01"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.bragitoff.curvefit_leastsquares.Poly_Fit">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Enter the degree of the Polynomial"
+        android:id="@+id/textView2"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/n_deg"
+        android:layout_below="@+id/textView2"
+        android:layout_centerHorizontal="true"
+        android:imeOptions="actionDone"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:id="@+id/submit_n"
+        android:onClick="calc_pfit"
+        android:layout_below="@+id/n_deg"
+        android:layout_centerHorizontal="true"
+        android:background="@color/colorPrimary"
+        android:textColor="@color/icons" />
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/poly_coeff"
+        android:layout_below="@+id/poly_ans"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:id="@+id/poly_ans"
+        android:layout_below="@+id/submit_n"
+        android:layout_centerHorizontal="true" />
+    <com.jjoe64.graphview.GraphView
+        android:layout_width="match_parent"
+        android:layout_height="200dip"
+        android:id="@+id/graph_poly"
+        android:layout_below="@+id/poly_ans" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal|numberSigned"
+        android:ems="10"
+        android:layout_below="@+id/graph_poly"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/editText_inter_poly"
+        android:hint="Enter an x-value" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_below="@+id/interpolate_poly"
+        android:layout_marginLeft="0dp"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:id="@+id/inter_ans_poly" />
+
+    <Button
+        android:text="Interpolate/Extrapolate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/interpolate_poly"
+        android:onClick="interpolate_poly"
+        android:layout_below="@+id/editText_inter_poly"
+        android:layout_marginTop="0dp"
+        android:background="@color/colorPrimaryDark"
+        android:textColor="@color/icons"
+        android:minHeight="34dp"
+        android:textSize="12sp"
+        android:paddingRight="5dp"
+        android:paddingLeft="5dp" />
+</RelativeLayout>
+</ScrollView>

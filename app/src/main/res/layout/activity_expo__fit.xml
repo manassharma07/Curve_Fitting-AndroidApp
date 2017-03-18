@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ScrollView04"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.bragitoff.curvefit_leastsquares.Expo_Fit"
+    android:id="@+id/exp_layout"
+    android:background="@color/icons"
+    android:focusableInTouchMode="true">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/c"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/a"
+        android:layout_below="@+id/c"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Exponential Fit; y=c*exp(ax)"
+        android:id="@+id/textView6"
+        android:layout_below="@+id/a"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <com.jjoe64.graphview.GraphView
+        android:layout_width="match_parent"
+        android:layout_height="200dip"
+        android:id="@+id/graph_expo"
+        android:layout_below="@+id/textView6" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal|numberSigned"
+        android:ems="10"
+        android:layout_below="@+id/graph_expo"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/editText_inter_exp"
+        android:hint="Enter an x-value" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_below="@+id/interpolate_exp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:id="@+id/inter_ans_exp" />
+
+    <Button
+        android:text="Interpolate/Extrapolate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/interpolate_exp"
+        android:onClick="interpolate_exp"
+        android:layout_below="@+id/editText_inter_exp"
+        android:layout_marginTop="0dp"
+        android:background="@color/colorPrimaryDark"
+        android:textColor="@color/icons"
+        android:minHeight="34dp"
+        android:textSize="12sp"
+        android:paddingRight="5dp"
+        android:paddingLeft="5dp" />
+
+
+</RelativeLayout>
+</ScrollView>

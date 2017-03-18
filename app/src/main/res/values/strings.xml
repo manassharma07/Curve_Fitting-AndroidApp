@@ -1,0 +1,117 @@
+<resources>
+    <string name="app_name">"Curve Fit - Tools "</string>
+    <string name="action_rate">"Rate App"</string>
+    <string name="share_app">Share App</string>
+    <string name="action_settings">Help</string>
+    <string name="about">
+    <![CDATA[
+<p>Welcome to Curve Fit - Tools</p>
+<p>Curve Fit - Tools helps you find out the best fit to a curve using the Least Squares Approximation Method.</p>
+<p>You can find an exponential, linear or a polynomial fit for any curve.</p>
+<p>Curve Fit- Tools is better than most of the apps in the Play Store that let you do the same things for a variety of reasons.</p>
+<ol>
+<li>->With Curve Fit you can virtually input unlimited amount of data.</li><br>
+<li>->You can use potentially any degree polynomial you want.</li><br>
+<li>->You can save your data to a csv file which can later on be opened by MS Excel or any other software of your choice.</li><br>
+<li>->The graphs are very neat and zoomable.</li><br>
+<li>->The algorithms are fast and ensure quick processing.</li><br>
+<li>->More features will be added even&nbsp;though it already out performs most other apps.</li><br>
+</ol>
+<p>The results of the app were cross checked with a lot of existing softwares for a variety of data sets and the results were uniform.</p>
+
+<p><strong>Developer:</strong></p>
+<a href="https://www.linkedin.com/in/manas-sharma-24059a12a/">Manas Sharma</a><br>
+Follow him and his work at the following links:<br>
+<a href="http://bragitoff.com">Blog</a><br>
+<a href="http://facebook.com/ducktape07">Facebook</a><br>
+<a href="http://twitter.com/ManasSharma07">Twitter</a><br>
+<a href="https://www.linkedin.com/in/manas-sharma-24059a12a/">Linked In</a><br>
+<a href="https://www.youtube.com/channel/UCO0mdq1TnLctbwUGj_TnR7Q">YouTube</a><br>
+<a href="https://www.facebook.com/bragitoff/">Facebook Page</a><br>
+<a href="http://apps.bragitoff.com">More Apps</a><br>
+
+<p>Please rate and review the App on the : <a href="https://play.google.com/store/apps/details?id=com.bragitoff.curvefit_leastsquares">Play Store</a></p>
+<p>Feedback Email: <a href="mailto:">feedback@bragitoff.com</a></p>
+
+<h2>Graphing Library:</h2>
+<p>Curve Fit-Tools uses the&nbsp;<a href="http://www.android-graphview.org/">GraphView library</a>&nbsp;by&nbsp;<a href="https://plus.google.com/+JonasGehring">jjoe</a>.</p>
+<div class="ipWidget ipWidget-Heading ipSkin-default">
+<h4 class="_title">License</h4>
+</div>
+<div class="ipWidget ipWidget-Text ipSkin-default">
+<div class="ipsContainer">
+<p>GraphView is currently published under Apache v2 license.</p>
+<p>Which means that you&nbsp;<span>are allowed</span>&nbsp;to use it in your closed source applications.<br />See the complete license here:&nbsp;<a href="https://github.com/jjoe64/GraphView/blob/master/license.txt" target="_blank">https://github.com/jjoe64/GraphView/blob/master/license.txt<br /></a>And more information about that license model at wikipedia:&nbsp;<a href="https://en.wikipedia.org/wiki/Apache_License" target="_blank">https://en.wikipedia.org/wiki/Apache_License</a></p>
+</div>
+</div>
+<h2>CSV Read/Write Library</h2>
+<p>Curve Fit-Tools uses the&nbsp;<a href="http://opencsv.sourceforge.net/">opencsv</a>&nbsp;library by&nbsp;<a href="http://blogs.bytecode.com.au/glen/">Glen Smith</a>&nbsp;for reading and writing CSV&rsquo;s.</p>
+<h4>License</h4>
+<p>opencsv is published under&nbsp;Apache v2 license.</p>
+<p>To find out more details of the license, read the&nbsp;<a class="externalLink" href="http://www.apache.org/licenses/LICENSE-2.0">Apache 2.0 license agreement</a>.</p>
+<h2>File Picking Library</h2>
+<p>Curve Fit-Tools uses the <a href="https://github.com/nbsp-team/MaterialFilePicker">MaterialFilePicker </a>library by <a href="https://github.com/nbsp-team">nbsp-Team</a>&nbsp;for picking up the CSV file from directory.</p>
+<h4>License:</h4>
+<p>MaterialFilePicker is published under Apache v2 <a href="https://github.com/nbsp-team/MaterialFilePicker/blob/master/LICENSE">License. </a></p>
+<p>To find out more details of the license, read the <a class="externalLink" href="http://www.apache.org/licenses/LICENSE-2.0">Apache 2.0 license agreement</a>.</p>
+
+]]>
+</string>
+    <string name="help">
+    <![CDATA[
+  <h3>Entering the data-set:</h3>
+<ul>
+<li>&bull; Enter the x-values and y-values using the form given and press submit after each entry to store it.</li><br>
+<li>&bull; You can scroll through the list of data points to see if you entered them correctly.<br />Note: You can enter a new data-set or delete the existing values by clicking on &lsquo;Clear&rsquo; button.</li><br>
+<li>&bull; You need to provide at least two pairs of xy values and equal number of x and y values.</li><br>
+<li>&bull; Also you cannot repeat an x-value.</li><br>
+<li>&bull; Exponential Fit cannot be calculated for negative y-values and will result in NaN values or, highly unlikely, a crash.</li><br>
+<li>&bull; A quick hack&mdash;&gt; Instead of clicking on the &lsquo;Done&rsquo; key after entering a data-point, click on the &lsquo;Submit&rsquo; button. Pressing the &lsquo;Done&rsquo; takes away the keyboard and you have to click on the form again and again thus slowing down the process. Pressing the &lsquo;Submit&rsquo; key doesn&rsquo;t take away the keyboard and will improve the data entering speed.</li><br>
+<li>&bull; You can edit/insert/delete a data-entry by long pressing it.</li><br>
+</ul>
+<h3>Calculating the Fit:</h3>
+<p>After entering your data-set just click on &lsquo;Calculate&rsquo; and on the next screen choose from three options: (i) Exponential Fitting, (ii) Linear Fitting and (iii) Polynomial Fitting.</p>
+<p>If you choose &lsquo;Polynomial Fit&rsquo;, enter the degree of polynomial that you want to&nbsp;fit the curve with.<br />Then click on &lsquo;Submit&rsquo;.</p>
+<h3>Saving Data as CSV:</h3>
+<p>After entering your data-set you can save it as a csv file for future reference.</p>
+<p>Files are saved in a folder called &lsquo;Curve Fitter CSV&rsquo;, which would be created either inside your external storage or internal storage.</p>
+<p><span>What is a CSV?</span>&nbsp;&ndash;&nbsp;<a href="https://en.wikipedia.org/wiki/Comma-separated_values">Wikipedia&nbsp;</a><br />CSV files can be read by any excel type software or if you have an Office Suite on your phone.<br />You can also transfer the file to your computer and open it on MS Excel or any other software of your preference.</p>
+<h3>Reading Data from a CSV:</h3>
+<p>Curve Fit-Tools has a unique feature which lets you read CSV files from your storage.<br />This feature is extremely useful and desirable as it allows you to re-analyze a data-set that you saved as a CSV before, thus, saving you a lot of time.</p>
+<p>You could also have someone mail you their data as a csv and you could analyze it on the go.</p>
+<p>To read a CSV: Just click on &lsquo;Read CSV&rsquo; button on the Main Screen. This would bring up a file browser showing the contents of your external directory, you could then browse and select your CSV file. The data would be read and the x-y data would be filled out automatically.</p>
+<p>Note: Your CSV file should contain the x-axis values in the first column and the y-axis values in the second column.<br />The app uses it’s own built-in file browser and not the one installed on your device.</p>
+<h2>Algorithm:</h2>
+<p>Curve Fit- Tools calculates the fit using the Least Square Approximation Method(<a href="https://en.wikipedia.org/wiki/Least_squares">Wikipedia</a>).</p>
+<p>Linear Fitting:&nbsp;<a href="http://www.bragitoff.com/2015/10/linear-fit-lab-write-up-with-algorithm-and-flow-chart/">Algorithm</a></p>
+<p>Exponential Fitting:&nbsp;<a href="http://www.bragitoff.com/2015/10/exponential-fit-lab-write-up-with-algorithm-and-flow-chart/">Algorithm</a></p>
+<p>Polynomial Fitting:&nbsp;<a href="http://www.bragitoff.com/2015/10/polynomial-fit-lab-write-up-with-algorithm-and-flowchart/">Algorithm</a></p>
+<p>More useful resources on Numerical Methods can be found on my(developer) blog:&nbsp;<a href="http://bragitoff.com/">bragitoff.com</a>&nbsp;under the category -&gt;Physics&gt;Numerical Analysis.</p>
+<h2>Graphing Library:</h2>
+<p>Curve Fit-Tools uses the&nbsp;<a href="http://www.android-graphview.org/">GraphView library</a>&nbsp;by&nbsp;<a href="https://plus.google.com/+JonasGehring">jjoe</a>.</p>
+<div class="ipWidget ipWidget-Heading ipSkin-default">
+<h4 class="_title">License</h4>
+</div>
+<div class="ipWidget ipWidget-Text ipSkin-default">
+<div class="ipsContainer">
+<p>GraphView is currently published under Apache v2 license.</p>
+<p>Which means that you&nbsp;<span>are allowed</span>&nbsp;to use it in your closed source applications.<br />See the complete license here:&nbsp;<a href="https://github.com/jjoe64/GraphView/blob/master/license.txt" target="_blank">https://github.com/jjoe64/GraphView/blob/master/license.txt<br /></a>And more information about that license model at wikipedia:&nbsp;<a href="https://en.wikipedia.org/wiki/Apache_License" target="_blank">https://en.wikipedia.org/wiki/Apache_License</a></p>
+</div>
+</div>
+<h2>CSV Read/Write Library</h2>
+<p>Curve Fit-Tools uses the&nbsp;<a href="http://opencsv.sourceforge.net/">opencsv</a>&nbsp;library by&nbsp;<a href="http://blogs.bytecode.com.au/glen/">Glen Smith</a>&nbsp;for reading and writing CSV&rsquo;s.</p>
+<h4>License</h4>
+<p>opencsv is published under&nbsp;Apache v2 license.</p>
+<p>To find out more details of the license, read the&nbsp;<a class="externalLink" href="http://www.apache.org/licenses/LICENSE-2.0">Apache 2.0 license agreement</a>.</p>
+<h2>File Picking Library</h2>
+<p>Curve Fit-Tools uses the <a href="https://github.com/nbsp-team/MaterialFilePicker">MaterialFilePicker </a>library by <a href="https://github.com/nbsp-team">nbsp-Team</a>&nbsp;for picking up the CSV file from directory.</p>
+<h4>License:</h4>
+<p>MaterialFilePicker is published under Apache v2 <a href="https://github.com/nbsp-team/MaterialFilePicker/blob/master/LICENSE">License. </a></p>
+<p>To find out more details of the license, read the <a class="externalLink" href="http://www.apache.org/licenses/LICENSE-2.0">Apache 2.0 license agreement</a>.</p>
+    ]]>
+</string>
+
+    <string name="title_activity_splash">Splash</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+</resources>
