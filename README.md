@@ -1,9 +1,11 @@
 # Curve_Fitting-AndroidApp
 Android App to find the best fit for a given set of data.
 
-Welcome to Curve Fit - Tools
+Welcome to <a href="https://play.google.com/store/apps/details?id=com.bragitoff.curvefit_leastsquares">Curve Fit - Tools</a>
 
-<a href="http://www.bragitoff.com/wp-content/uploads/2017/02/FIT.png"><img class="aligncenter wp-image-4243 size-full" src="http://www.bragitoff.com/wp-content/uploads/2017/02/FIT.png" width="1024" height="500" /></a>
+<strong>Download Link: </strong><a href="https://play.google.com/store/apps/details?id=com.bragitoff.curvefit_leastsquares">https://play.google.com/store/apps/details?id=com.bragitoff.curvefit_leastsquares</a>
+
+<a href="https://play.google.com/store/apps/details?id=com.bragitoff.curvefit_leastsquares"><img class="aligncenter wp-image-4243 size-full" src="http://www.bragitoff.com/wp-content/uploads/2017/02/FIT.png" width="1024" height="500" /></a>
 
 Curve Fit - Tools helps you find out the best fit to a curve using the Least Squares Approximation Method.
 
@@ -20,9 +22,9 @@ Curve Fit- Tools is better than most of the apps in the Play Store that let you 
 </ol>
 The results of the app were cross checked with a lot of existing softwares for a variety of data sets and the results were uniform.
 
-<a href="http://www.bragitoff.com/wp-content/uploads/2017/02/curve.png"><img class="alignright size-medium wp-image-4244" src="http://www.bragitoff.com/wp-content/uploads/2017/02/curve-300x300.png" alt="" width="300" height="300" /></a>
+<a href="https://play.google.com/store/apps/details?id=com.bragitoff.curvefit_leastsquares"><img class="alignright size-medium wp-image-4244" src="http://www.bragitoff.com/wp-content/uploads/2017/02/curve-300x300.png" alt="" width="300" height="300" /></a>
 
-<strong>Download Link: </strong><a href="https://play.google.com/store/apps/details?id=com.bragitoff.curvefit_leastsquares">https://play.google.com/store/apps/details?id=com.bragitoff.curvefit_leastsquares</a>
+
 <h2>Help:</h2>
 <h3>Entering the data-set:</h3>
 <ul>
